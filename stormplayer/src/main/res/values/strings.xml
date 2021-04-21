@@ -1,0 +1,8 @@
+<resources>
+    <string name="videoStopText">The stream has ended</string>
+    <string name="videoNotFoundText">Stream with given name was not found</string>
+    <string name="incompatiblePlayerProtocolText">This StormCore version is not compatible with the provided streaming server</string>
+    <string name="connectionErrorText">An error occurred - check your internet connection</string>
+    <string name="liveText">LIVE</string>
+
+</resources>

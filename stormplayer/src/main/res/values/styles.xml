@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StormQualityDialog" parent="Theme.AppCompat.Dialog.Alert">
+
+    </style>
+    <style name="StormLoader" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/storm_accent</item>
+    </style>
+</resources>

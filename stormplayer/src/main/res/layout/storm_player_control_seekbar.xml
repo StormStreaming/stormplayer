@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.stormstreaming.stormplayer.view.SeekBar
+        android:id="@+id/stormSeekBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:max="10000"
+        android:progressDrawable="@drawable/storm_seekbar_style"
+        android:thumb="@drawable/storm_seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/stormSeekBarTooltipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stormSeekBar"
+        android:layout_marginBottom="8dp"
+        android:padding="9dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/storm_seekbar_font_color"
+        android:background="@drawable/storm_seekbar_timetooltip"
+        android:visibility="gone"
+        android:text="" />
+
+
+
+</RelativeLayout>

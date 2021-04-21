@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="storm_black">#FF000000</color>
+    <color name="storm_playback_screen_background">#80000000</color>
+    <color name="storm_seekbar_font_color">#FFFFFFFF</color>
+    <color name="storm_seekbar_timetooltip_background">#80000000</color>
+    <color name="storm_white">#FFFFFFFF</color>
+    <color name="storm_accent">#FF785A</color>
+    <color name="storm_accent_light">#FFAA5A</color>
+    <color name="storm_seekbar_background">#673925</color>
+
+</resources>
