@@ -42,7 +42,7 @@ public class PlaybackButton extends InterfaceElement implements View.OnClickList
      */
 
     @Override
-    public void onPlay(){
+    public void onVideoPlay(){
         ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -52,7 +52,7 @@ public class PlaybackButton extends InterfaceElement implements View.OnClickList
     }
 
     @Override
-    public void onPause(){
+    public void onVideoPause(){
         ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
             @Override
             public void run() {

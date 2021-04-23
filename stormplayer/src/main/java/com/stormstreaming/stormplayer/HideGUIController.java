@@ -94,13 +94,13 @@ public class HideGUIController implements StormPlayerView.EventListener, StormLi
     }
 
     @Override
-    public void onPlay(){
+    public void onVideoPlay(){
         this.isPlaying = true;
         this.restartHideTimer();
     }
 
     @Override
-    public void onPause(){
+    public void onVideoPause(){
         this.isPlaying = false;
         this.restartHideTimer();
     }

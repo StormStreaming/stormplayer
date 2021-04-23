@@ -40,7 +40,7 @@ public class LoaderElement extends InterfaceElement implements StormPlayerView.E
     }
 
     @Override
-    public void onPlay() {
+    public void onVideoPlay() {
         hideLoader();
     }
 
