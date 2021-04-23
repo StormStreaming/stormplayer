@@ -75,7 +75,7 @@ public class ErrorScreen extends InterfaceElement {
     }
 
     @Override
-    public void onConnectionError(Exception e) {
+    public void onVideoConnectionError(Exception e) {
         ((Activity) this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
             @Override
             public void run() {

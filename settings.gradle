@@ -1,4 +1,4 @@
 include ':stormlibrary'
 include ':stormplayer'
-include ':app'
+include ':stormplayerapp'
 rootProject.name = "StormPlayerApp"
