@@ -157,6 +157,10 @@ public class StormPlayerView extends FrameLayout implements View.OnClickListener
         listeners.addEventListener(e);
     }
 
+    public void removeEventListener(StormPlayerView.EventListener e){
+        listeners.removeEventListener(e);
+    }
+
     @Override
     public void onClick(View v) {
         if(v.getId() == this.exoPlayerView.getVideoSurfaceView().getId())
