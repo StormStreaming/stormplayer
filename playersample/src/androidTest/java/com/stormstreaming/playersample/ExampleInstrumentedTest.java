@@ -1,4 +1,4 @@
-package com.stormstreaming.stormplayerapp;
+package com.stormstreaming.playersample;
 
 import android.content.Context;
 

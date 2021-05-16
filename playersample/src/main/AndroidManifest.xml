@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stormstreaming.stormplayerapp">
+    package="com.stormstreaming.playersample">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StormPlayerApp">
         <activity
-            android:name=".MainActivity"
+            android:name="com.stormstreaming.playersample.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.StormPlayerApp.NoActionBar">
             <intent-filter>

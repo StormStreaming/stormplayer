@@ -84,6 +84,26 @@ public class ErrorScreen extends InterfaceElement {
         });
     }
 
+    @Override
+    public void onGatewayGroupNameNotFound() {
+        ((Activity) this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                showError(stormPlayerView.getResources().getString(R.string.videoNotFoundText));
+            }
+        });
+    }
+
+    @Override
+    public void onGatewayConnectionError(Exception e) {
+        ((Activity) this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                showError(stormPlayerView.getResources().getString(R.string.errorOccured));
+            }
+        });
+    }
+
     public View getErrorScreen() {
         return errorScreen;
     }

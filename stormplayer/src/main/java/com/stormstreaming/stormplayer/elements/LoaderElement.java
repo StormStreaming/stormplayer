@@ -30,6 +30,16 @@ public class LoaderElement extends InterfaceElement implements StormPlayerView.E
     }
 
     @Override
+    public void onGatewayConnecting() {
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                showLoader();
+            }
+        });
+    }
+
+    @Override
     public void onVideoConnecting() {
         ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
             @Override

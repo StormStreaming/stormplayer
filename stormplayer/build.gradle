@@ -38,7 +38,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 
-    implementation 'com.github.StormStreaming:stormlibrary-androidsdk:v1.0.1'
+    implementation 'com.github.StormStreaming:stormlibrary-androidsdk:v1.0.2'
 
     implementation 'com.google.android.exoplayer:exoplayer-core:2.13.2'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.13.2'
