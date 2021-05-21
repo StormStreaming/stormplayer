@@ -28,11 +28,6 @@ public class MainActivity extends AppCompatActivity {
         StormPlayerView stormPlayerView = findViewById(R.id.stormPlayerView);
         stormPlayerView.setStormLibrary(stormLibrary);
 
-        /*temp */
-        StormMediaItem mediaItem23 = new StormMediaItem("stormdev.web-anatomy.com", 443, true, "test_hd", "320p");
-        stormLibrary.addMediaItem(mediaItem23, true);
-        /*temp koniec*/
-
         StormMediaItem mediaItem = new StormMediaItem("sub1.example.com", 80, false, "test_hd", "320p");
         stormLibrary.addMediaItem(mediaItem);
 
