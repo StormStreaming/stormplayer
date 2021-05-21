@@ -35,7 +35,8 @@ public class HideGUIController implements StormPlayerView.EventListener, StormLi
                 @Override
                 public void run() {
                     if(hideAfterMS == 0) {
-                        that.hideGUI();
+                        if(hideGUIController.isPlaying())
+                            that.hideGUI();
                         hideAfterMS = -1;
                     }
                 }
@@ -66,14 +67,16 @@ public class HideGUIController implements StormPlayerView.EventListener, StormLi
     }
 
     public void hideGUI(){
-        if(!this.isPlaying)
-            return;
         cancelHideTimer();
         this.stormControls.setVisibility(View.GONE);
     }
 
     public void showGUI(){
         this.stormControls.setVisibility(View.VISIBLE);
+    }
+
+    public boolean isPlaying(){
+        return isPlaying;
     }
 
     private void cancelHideTimer(){
@@ -113,8 +116,11 @@ public class HideGUIController implements StormPlayerView.EventListener, StormLi
 
     @Override
     public void onVideoClicked(){
-        this.showGUI();
-        this.restartHideTimer();
+        if(this.stormControls.getVisibility() != View.VISIBLE) {
+            this.showGUI();
+            this.restartHideTimer();
+        }else
+            this.hideGUI();
     }
 
 }
