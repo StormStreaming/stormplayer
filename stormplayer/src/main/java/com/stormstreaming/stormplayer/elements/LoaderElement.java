@@ -55,31 +55,63 @@ public class LoaderElement extends InterfaceElement implements StormPlayerView.E
 
     @Override
     public void onVideoPlay() {
-        hideLoader();
+
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 
     @Override
     public void onErrorScreenShow(String errorMessage) {
-        hideLoader();
+
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 
     @Override
     public void onVideoMetaData(VideoMetaData videoMetaData){
-        hideLoader();
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 
     @Override
     public void onGatewayConnectionError(Exception e){
-        hideLoader();
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 
     @Override
     public void onGatewayGroupNameNotFound(){
-        hideLoader();
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 
     @Override
     public void onGatewayStormMediaItems(List<StormMediaItem> stormMediaItems){
-        hideLoader();
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideLoader();
+            }
+        });
     }
 }

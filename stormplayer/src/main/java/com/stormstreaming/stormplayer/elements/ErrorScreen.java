@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+import com.stormstreaming.stormlibrary.model.StormMediaItem;
 import com.stormstreaming.stormplayer.R;
 import com.stormstreaming.stormplayer.StormPlayerView;
 
@@ -42,6 +43,33 @@ public class ErrorScreen extends InterfaceElement {
         this.stormPlayerView.removeView(errorScreen);
         this.errorScreen = null;
         this.stormPlayerView.getListeners().dispatchEvent(listener -> listener.onErrorScreenHide());
+    }
+
+    public void onVideoConnecting() {
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideError();
+            }
+        });
+    }
+
+    public void onGatewayConnecting() {
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideError();
+            }
+        });
+    }
+
+    public void onStormMediaItemAdded(StormMediaItem stormMediaItem) {
+        ((Activity)this.stormPlayerView.getContext()).runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                hideError();
+            }
+        });
     }
 
     @Override
