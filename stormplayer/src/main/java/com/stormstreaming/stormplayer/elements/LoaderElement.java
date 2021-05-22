@@ -4,9 +4,12 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.stormstreaming.stormlibrary.model.StormMediaItem;
 import com.stormstreaming.stormlibrary.model.VideoMetaData;
 import com.stormstreaming.stormplayer.R;
 import com.stormstreaming.stormplayer.StormPlayerView;
+
+import java.util.List;
 
 public class LoaderElement extends InterfaceElement implements StormPlayerView.EventListener{
 
@@ -62,6 +65,21 @@ public class LoaderElement extends InterfaceElement implements StormPlayerView.E
 
     @Override
     public void onVideoMetaData(VideoMetaData videoMetaData){
+        hideLoader();
+    }
+
+    @Override
+    public void onGatewayConnectionError(Exception e){
+        hideLoader();
+    }
+
+    @Override
+    public void onGatewayGroupNameNotFound(){
+        hideLoader();
+    }
+
+    @Override
+    public void onGatewayStormMediaItems(List<StormMediaItem> stormMediaItems){
         hideLoader();
     }
 }
