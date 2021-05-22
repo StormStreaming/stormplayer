@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.stormstreaming.stormlibrary.model.VideoMetaData;
 import com.stormstreaming.stormplayer.R;
 import com.stormstreaming.stormplayer.StormPlayerView;
 
@@ -56,6 +57,11 @@ public class LoaderElement extends InterfaceElement implements StormPlayerView.E
 
     @Override
     public void onErrorScreenShow(String errorMessage) {
+        hideLoader();
+    }
+
+    @Override
+    public void onVideoMetaData(VideoMetaData videoMetaData){
         hideLoader();
     }
 }
