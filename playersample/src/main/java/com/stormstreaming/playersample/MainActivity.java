@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         StormPlayerView stormPlayerView = findViewById(R.id.stormPlayerView);
         stormPlayerView.setStormLibrary(stormLibrary);
 
-        StormMediaItem mediaItem = new StormMediaItem("sub1.example.com", 80, false, "test_hd", "320p");
+        StormMediaItem mediaItem = new StormMediaItem("sub1.example.com", 80, false, "live", "test_hd", "320p");
         stormLibrary.addMediaItem(mediaItem);
 
-        mediaItem = new StormMediaItem("sub2.example.com", 80, false, "test_hd", "720p");
+        mediaItem = new StormMediaItem("sub2.example.com", 80, false, "live", "test_hd", "720p");
         stormLibrary.addMediaItem(mediaItem);
 
         try {
