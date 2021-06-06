@@ -12,7 +12,8 @@
         <activity
             android:name="com.stormstreaming.playersample.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.StormPlayerApp.NoActionBar">
+            android:theme="@style/Theme.StormPlayerApp.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
